@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Collective Behavior: From Digital Traces to Generative Agents</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="David Garcia   Social Data Science Lab, University of Konstanz    also at: Complexity Science Hub Vienna" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="libs/footer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Collective Behavior: From Digital Traces to Generative Agents
+]
+.author[
+### David Garcia <br> <em>Social Data Science Lab, University of Konstanz <br><br> also at: Complexity Science Hub Vienna</em>
+]
+.date[
+### slides at dgarcia.eu/Como2025
+]
+
+---
+
+
+
+
+
+
+
+
+layout: true
+&lt;div class="my-footer"&gt;&lt;span&gt;David Garcia - From Digital Traces to Generative Agents&lt;/span&gt;&lt;/div&gt;
+
+---
+
+background-image: url(figures/AboutUS.svg)
+background-size: 98%
+
+
+---
+
+# Outline
+
+### 1. Yet another Intro to CSS
+
+### 2. Collective Emotions on Social Media
+
+### 3. Improving Individual Emotion Detection in Social Media
+
+### 4. Unpacking (Affective) Polarization
+
+### 5. Generative Agents for Online Social Sytems
+
+### 6. The Scale of Coordination among AI Agents
+
+---
+
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+
+# 1. Yet another Intro to Computational Social Science
+
+---
+
+## *Computational* in Computational Social Science
+It can have three meanings:
+
+- **Digital**&lt;br&gt; 
+Based on large datasets of human behavior, for example produced by the Web and social media
+
+- **Computerized**&lt;br&gt;
+The quantitative analysis of data in an automated, tractable, repeatable, and extensible fashion
+
+- **Generative**&lt;br&gt;
+Application of data and results to design of agent-based models that explain complex social phenomena and motivate interventions
+
+---
+
+## The Hype Cycle of Computational Social Science
+&lt;center&gt;
+&lt;img src="figures/Hype1.svg" width="900" /&gt;
+
+---
+
+# Peak hype: the data piñata era
+
+&lt;img src="figures/pinata.png" width="1050" /&gt;
+
+---
+
+## The Hype Cycle of Computational Social Science
+&lt;center&gt;
+&lt;img src="figures/Hype2.svg" width="900" /&gt;
+
+---
+## The Hype Cycle of Computational Social Science
+&lt;center&gt;
+&lt;img src="figures/Hype3.svg" width="900" /&gt;
+
+---
+background-image: url(figures/VennV3-pre.svg)
+background-size: 97%
+---
+background-image: url(figures/VennV3.svg)
+background-size: 97%
+---
+
+## The fourth circle: Complexity Science
+
+.pull-left[
+&lt;img src="figures/Cogs.jpg" width="750" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+&lt;img src="figures/network-ge2bd7754a_1920.png" width="750" style="display: block; margin: auto;" /&gt;
+]
+
+- A **complicated system** has many pieces with specific functions and well-defined relationships. It has been carefully **engineered or designed**.  
+- A **complex system** is composed of many particles that interact following some forces or dynamics. Its behavior follows from **natural principles**.
+
+---
+
+# Collective behavior: More is different
+
+&lt;img src="figures/MoreIsDifferent.png" width="750" style="display: block; margin: auto;" /&gt;
+[More is different: broken symmetry and the nature of the hierarchical structure of science. Philip Anderson, Science (1972)](https://cse-robotics.engr.tamu.edu/dshell/cs689/papers/anderson72more_is_different.pdf)
+
+---
+
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+
+# 2. Collective Emotions on Social Media
+
+---
+
+
+## The Social Function of Collective Emotions
+
+&lt;center&gt;
+&lt;img src="figures/ColectiveEmotions.png" width="900" /&gt;
+&lt;/center&gt;
+
+- **Theory of collective effervescence (Durkheim, 1912):**
+Shared emotions generate social identity, reinforce shared beliefs, and lead to higher solidarity
+
+- **Collective emotions (von Scheve and Salmela, 2014):**   
+Emotional states shared by a large amount of people at the same time
+
+
+---
+
+background-size: 40%
+background-image: url(figures/Trauma.png)
+background-position: 90% 60%
+
+
+## Emotional Responses to Collective Traumas
+
+**How do societies respond to traumatic events?**  
+**Is there a social function of collective emotions?**
+.pull-left[
+- Emotional synchronization: Experience of simultaneous negative emotions
+
+- Collective emotion lasts longer than individual emotional reactions
+
+- Individuals that participate in the collective emotions show higher levels of long-term solidarity ]
+
+---
+
+## Twitter Digital Traces after a Terrorist Attack
+
+Focus on Paris Attacks of of Nov 13, 2015  
+Removed bots, news media, and organizations. Final sample of 62,114 users  
+Retrieved historical timeline of users. Total of more than 27 Million tweets (no RT)
+&lt;center&gt;
+&lt;img src="figures/ParisCase.png" width="900" /&gt;
+
+---
+
+## Linguistic Signals
+
+**Linguistic Inquiry and Word Count, LIWC (pronounced “Luke”)**  
+- Simple word matching method  
+- Validated by psychologists, years of implementation (2001-2015)  
+- Multiple classes, calibrated for netspeak and neologisms
+
+
+.pull-left[
+&lt;img src="figures/LIWC.png" width="1000" /&gt;
+]
+.pull-right[
+**LIWC classes in this study:**  
+Positive Affect, Negative Affect  
+Anxiety, Sadness, Anger  
+Social processes  
+Prosocial terms (Frimer, et. al, 2014)  
+French values (libert*, egalit*, fraternit*)
+]
+
+---
+
+## Evidence of Collective Emotions
+&lt;center&gt;
+&lt;img src="figures/TS.png" width="750" /&gt;
+&lt;/center&gt;
+
+---
+
+### Collective Dynamics of Social Resilience Indicators
+&lt;center&gt;
+&lt;img src="figures/TS2.png" width="720" /&gt;
+&lt;/center&gt;
+
+
+---
+
+# Emotions and Prosocial Language
+
+.pull-left[
+&lt;center&gt;
+&lt;img src="figures/TS3.png" width="470" /&gt;
+&lt;/center&gt;
+]
+
+.pull-right[
+Division of users into two groups based on their emotional expression two weeks after the attacks
+
+Frequency of social process terms:
+- Very similar before the attacks
+- Strong difference after the attacks
+- Difference lasts for months
+
+Similar effect for prosocial terms and shared values terms
+]
+
+---
+
+## What we learned about collective emotions
+
+- Terrorist attacks trigger collective emotions that we can observe online
+
+- Terms related to social resilience increase after collective emotions
+
+- Individuals expressing stronger emotions used on average more terms related to social processes, prosocial behavior, and shared values
+
+- Collective emotions are not just venting, they can keep us together
+
+- Negative effects: inter-group conflict, intolerance, short-term orientation...
+
+- Online interactive visualization at: http://dgarcia.eu/ParisAttacks.html
+
+[**Collective Emotions and Social Resilience in the Digital Traces After a Terrorist Attack. David Garcia Bernard Rimé. Psychological Science (2019)**](https://journals.sagepub.com/doi/full/10.1177/0956797619831964)
+
+---
+
+
+
+
+layout: true
+&lt;div class="my-footer"&gt;&lt;span&gt;
+&lt;a href=https://arxiv.org/abs/2107.13236&gt; Social media emotion macroscopes reflect emotional experiences in society at large. David Garcia, Max Pellert, Jana Lasser, Hannah Metzler. https://arxiv.org/abs/2107.13236 (2021)&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
+
+---
+
+## The issue: Do Social Media Macroscopes work?
+
+
+.pull-left[
+&lt;img src="figures/earth.svg" width="500" /&gt;
+]
+
+.pull-right[
+Concerns about social media     macroscopes:
+1. Representation issues
+
+2. Performative behavior
+
+3. Measurement error and bias
+
+4. Researcher degrees of freedom
+]
+
+---
+
+
+# Validating a UK emotion macroscope
+
+&lt;img src="figures/MacroTest2.svg" width="975" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Sadness in Twitter and YouGov
+
+&lt;img src="figures/Sadness.svg" width="1200" style="display: block; margin: auto;" /&gt;
+
+- Similar results with dictionary-based and supervised methods (r~0.65)
+---
+# Anxiety in Twitter and YouGov
+
+&lt;img src="figures/Anxiety.svg" width="1200" style="display: block; margin: auto;" /&gt;
+
+- Improvement thanks to gender information in tweets
+
+---
+# Joy in Twitter and YouGov
+
+&lt;img src="figures/Joy.svg" width="1200" style="display: block; margin: auto;" /&gt;
+
+- Good correlation with supervised method but no correlation with dictionary-based method
+
+---
+
+layout: true
+&lt;div class="my-footer"&gt;&lt;span&gt;
+&lt;a href=https://www.nature.com/articles/s41598-022-14579-y&gt;
+Validating daily social media macroscopes of emotions. Max Pellert, Hannah Metzler, Michael Matzenberger, David Garcia. Scientific Reports (2022)&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
+
+---
+
+## Reproducing with an Austrian daily macroscope
+
+.pull-left[
+
+- 20-day emotion survey in derstandard.at (N=268,128)
+- Daily frequency, 3-day windows
+
+- Text from Der Standard forum (N=452,013)
+
+- Austrian tweets (N=515,187) filtered as UK macroscope
+
+- Compared dictionary-based (LIWC) and supervised model (GS)
+
+]
+.pull-right[
+&lt;img src="figures/DS1.svg" width="900" /&gt;
+]
+
+---
+
+## Conceptual Validation: COVID and Emotions
+.pull-left[
+![](figures/DS31.svg)
+]
+.pull-right[
+![](figures/DS32.svg)]
+
+- DerStandard sample is not representative - but composed of humans
+- Conceptual validation: COVID case numbers should elicit negative emotions experiences
+- Comparable correlations when using survey data and a Twitter macroscope
+- Psychology to help CS: no ground truth, test of convergence instead
+
+---
+
+## Online Media for Social Sensing of Emotions
+
+&lt;img src="figures/socialsensing.svg" width="850" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Social media macroscopes: Take-home message
+
+![:scale 200%](figures/takeHome.svg)
+
+&lt;a href=https://www.nature.com/articles/s41598-022-14579-y&gt;
+Validating daily social media macroscopes of emotions. Max Pellert, Hannah Metzler, Michael Matzenberger, David Garcia. Scientific Reports (2022)
+
+&lt;a href=https://arxiv.org/abs/2107.13236&gt; Social media emotion macroscopes reflect emotional experiences in society at large. David Garcia, Max Pellert, Jana Lasser, Hannah Metzler. https://arxiv.org/abs/2107.13236 (2021)
+
+&lt;a href=https://worldhappiness.report/ed/2022/using-social-media-data-to-capture-emotions-before-and-during-covid-19/&gt; Using social media data to capture emotions before and during COVID-19. Hannah Metzler, Max Pellert, David Garcia. World Happiness Report (2022)
+---
+
+
+
+layout: true
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;a href="https://epjdatascience.springeropen.com/articles/10.1140/epjds/s13688-023-00427-0"&gt; LEIA: Linguistic Embeddings for the Identification of Affect. Segun Taofeek Aroyehun, Lukas Malik, Hannah Metzler, Nikolas Haimerl, Anna Di Natale, David Garcia. EPJ Data Science (2023)&lt;/a&gt;&lt;/span&gt;&lt;/div&gt; 
+
+---
+
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+
+# 3. Improving Individual Emotion Detection
+  
+---
+
+
+## State-of-the-practice Sentiment Analysis Pipeline
+
+.left-column[
+![](figures/SA-pipeline.png)
+]
+
+.right-column[
+1. Create representative sample of documents from application case
+2. Crowdsource annotations (e.g. Mechanical Turk, FigureEight, students...)
+3. Split development/training/test samples from annotated documents
+4. Develop model using the development sample, evaluate on training sample with cross-validation
+5. Train final model on full train sample
+6. One evaluation run over test sample. Report performance versus a benchmark including other models and methods
+7. Apply model over rest of documents
+]
+---
+
+# Challenges in Emotion Identification
+
+&lt;img src="figures/communication.png" width="950" style="display: block; margin: auto;" /&gt;
+
+Current sentiment analysis approaches assume that the **ground truth** is an annotation of emotions by **a reader**, often a student or a crowdsourcing worker
+
+Noise in ground truth creates **unmeasured error** and potential biases
+
+---
+
+## Vent: Self-annotated Social Media Emotions
+
+
+![](figures/VentApp.png)
+&lt;div style="font-size:18pt"&gt;&lt;span&gt;Lykousas, N., Patsakis, C., Kaltenbrunner, A., &amp; Gómez. Sharing emotions at scale: The vent dataset. ICWSM (2019)&lt;/span&gt;&lt;/div&gt; 
+
+---
+
+### LEIA: Linguistic Embeddings for the Identification of Affect
+
+![](figures/Schema.png)
+
+---
+
+# Vent Datasets Summary
+
+&lt;/br&gt;
+
+| Label        | Train            | Development    | User Test      | Time Test  | Random Test    |
+|--------------|:------------------:|:----------------:|:----------------:|:----------------:|:----------------:|
+| Sadness      | 1,712,985  | 199,890  | 262,999  | 293,993  | 264,906  |
+| Anger        | 1,517,282 | 147,778  | 224,997  | 205,598  | 226,068  |
+| Fear         | 1,341,624  | 138,929  | 198,264  | 185,461  | 201,563  |
+| Affection    | 979,019    | 144,175  | 161,018  | 191,022| 158,017  |
+| Happiness    | 795,363    | 74,369   | 118,290  | 91,127    | 116,647  |
+| **Total** | **6,346,273**        | **705,141**        | **965,568**        | **967,201**        |** 967,201 **       |
+
+---
+
+# Out-Of-Domain Datasets
+
+- We gathered datasets of emotion annotations from previous research
+- We use only test samples to allow future benchmarks
+- enISEAR and UniversalJoy are reader-annotated. TEC similarly with \#-tags
+- Affection not present in OOD datasets
+- Not a hard test of generalizability but a way to explore other domains
+
+| Dataset       | Source |  Year  | Sadness | Anger | Fear | Happiness | Total |
+|---------------|---------|---------|:---------:|:-------:|:------:|:-----------:|:--------------:|
+| **enISEAR**       | Writing tasks | 2019   | 143     | 143   | 143  | 143       | 572          |
+| **TEC**           | Twitter #emo  | 2012   | 765     | 305   | 499  | 1,627     | 3,196        |
+| GoEmotions    | Reddit | 2020   | 259     | 520   | 77   | 1,598     | 2,454        |
+| **Universal Joy** | Facebook   | 2021 | 128     | 58    | 11   | 384       | 581          |
+| SemEval       | Twitter | 2018    | 312     | 511   | 165  | 706       | 1,694        |
+
+---
+
+# Results in Vent
+
+&lt;center&gt; ![:scale 100%](figures/LEIA1.svg) &lt;/center&gt;
+
+LEIA outperforms supervised and unsupervised methods for all emotions and test datsets. `\(F_1\)` values between 70 and 80.
+
+---
+
+# Out-of-domain results
+
+|               | LIWC               | NRC                | NBSVM              | LEIA-base          | LEIA-large         |
+|---------------|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|
+| Universal Joy | 23.45 | 28.98 | 41.70 | **54.18** | 54.17 |
+| GoEmotions    | 45.81 | 32.68 | 48.23 | **46.31** | 45.75 |
+| TEC           | 36.02 | 33.92 | 39.07 | 43.87 | **44.12** |
+| SemEval       | 66.72  | 49.86  | 68.77 | **71.68** | 70.04 |
+| enISEAR       | 23.51 | 42.72 | 55.33 | 70.37 | **79.94** |
+
+
+- LEIA is best or tied with the best in all out-of-domain tests
+- LEIA is best or tied with the best in all emotions except Fear in TEC
+- Note: very different media, sampling methods, and labelling schemes
+
+---
+
+# Comparing with GPT models
+|           | LEIA-base          | LEIA-large         | GPT-3.5            | GPT-4              |
+|-----------|--------------------|--------------------|--------------------|--------------------|
+| Affection | 74.48 | **75.67** | 41.38 | 37.43 |
+| Anger     | 72.92 | **72.98** | 61.79 | 66.82 |
+| Fear      | 69.01 | **70.26** | 51.55 | 60.86 |
+| Happiness | **77.69** | 77.58 | 67.69 | 68.70 |
+| Sadness   | 67.28 | **68.00** | 59.94  | 64.00 |
+| Average   | 72.28 | **72.90** | 56.47 | 59.56 |
+
+
+- Evaluation on a sample of 1000 texts per emotion label from the user test sample. GPT models used with a standard prompt for zero-shot classification
+- LEIA greatly outperforms GPT-3.5-turbo and GPT-4 in each emotion
+
+---
+
+# Comparing with GPT models (OOD)
+
+|               | LEIA-base          | LEIA-large         | GPT-3.5            | GPT-4              |
+|---------------|--------------------|--------------------|--------------------|--------------------|
+| Universal Joy | 54.18 | 54.17 | 52.89  | **56.43**  |
+| GoEmotions   |   46.31    |  45.75      |   **59.06**    |   56.45          |
+| TEC           | 43.87 | 44.12 | 52.66  | **54.82** |
+| SemEval       | 71.68 | 70.04 | 80.13  | **81.72** |
+| enISEAR       | 70.37 | 79.94 | 84.96 | **89.97** |
+
+- GPT models outperform LEIA in GoEmotions, TEC, SemEval, and enISEAR
+- LEIA en par with GPT for Universal Joy
+- Model contamination? test samples for all these datasets are public and GPT models could have been trained with them
+- Universal Joy might be younger than the cutoff date
+
+---
+
+# LEIA (versus) Humans
+
+.center[![:scale 90%](figures/LEIAvsHumans.svg)]
+- Students annotating a balanced Vent sample (N=100, 720 annotations)
+- Initial results suggest that LEIA is comparable to humans
+- **Artificial Affective Intelligence:** Can LEIA help humans read emotions?
+
+
+---
+
+# Error analysis with LIME
+
+.center[![:scale 77%](figures/LIME.png)]
+
+&lt;a href="https://epjdatascience.springeropen.com/articles/10.1140/epjds/s13688-023-00427-0"&gt; LEIA: Linguistic Embeddings for the Identification of Affect. S. Aroyehun, L. Malik, H. Metzler, N. Haimerl, A. Di Natale, D. Garcia. EPJ Data Science (2023)&lt;/a&gt;
+
+
+---
+
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+
+# 4. Unpacking (Affective) Polarization
+
+---
+
+layout: true
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;a href="https://academic.oup.com/pnasnexus/article/3/12/pgae276/7713083"&gt;Unpacking polarization: Antagonism and Alignment in Signed Networks of Online Interaction. E. Fraxanet, M. Pellert, S. Schweighofer, V. Gómez, D. Garcia. PNAS Nexus (2024) &lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
+
+
+---
+
+## The Challenge of Mitigating Online Polarization
+
+![:scale 100%](figures/papersIntro.png)
+ &lt;font size="5"&gt;
+
+- Changes in feed algorithms have weak effects if applied only to part of the population
+- Alternative: recommend content with cross-partisan appeal
+  - It can be contentious but not necessarily across the polarization fault line
+  - What and when? Finding this content requires new models and methods
+
+[Influence of Facebook algorithms on political polarization tested. David Garcia. Nature (2023)](https://rdcu.be/djT2c)
+[Breaking the Social Media Prism: How to Make Our Platforms Less Polarizing. Chris Bail (2021)](https://press.princeton.edu/books/hardcover/9780691203423/breaking-the-social-media-prism)
+&lt;/font&gt;
+
+---
+# Unpacking (Affective) Polarization
+.center[![:scale 80%](figures/AntagonismAlignment.png)]
+---
+# Data on Signed Online Discussions
+.center[![:scale 85%](figures/SignedPlatforms.png)]
+Birdwatch (now Community Notes) and DerStandard comments (Austrian news)
+They contain political discussions with explicit signed, timestamped interactions
+---
+
+## From Interactions to Relations to Polarization
+
+![](figures/InterRel.png)
+
+---
+# Edge Frustration and Signed Alignment
+.center[![:scale 100%](figures/SAI.png)]
+ &lt;font size="5"&gt;
+[Balance and frustration in signed networks. S. Aref and M. Wilson. Complex Networks (2019)](https://doi.org/10.1093/comnet/cny015)
+ &lt;/font&gt;
+---
+
+# Alignment versus Antagonism
+
+.center[![:scale 68%](figures/diagram.svg)]
+
+---
+# The FAULTANA Pipeline
+
+.center[![:scale 88%](figures/diagram_pipeline.svg)]
+
+---
+.center[![:scale 85%](figures/BW.svg)]
+---
+
+## Temporal Evolution of Birdwatch
+
+.center[![:scale 72%](figures/BW1.svg)]
+---
+
+## Peaks and events in Birdwatch
+.center[![:scale 80%](figures/peaks.png)]
+
+---
+
+## Antagonism and Alignment in Der Standard
+
+.center[![:scale 100%](figures/DerStandard1.png)]
+
+---
+
+# Effects Over Time in Der Standard
+
+.center[![:scale 100%](figures/derst_elections.png)]
+
+---
+
+# Elections and Alignment in Der Standard
+
+.center[![:scale 100%](figures/derst_elections2.png)]
+
+
+---
+
+
+layout: true
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;a href="https://arxiv.org/abs/2312.06619"&gt; Emergence of Scale-Free Networks in Social Interactions among Large Language Models. G. De Marzo, L. Pietronero, D. Garcia. https://arxiv.org/abs/2312.06619&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
+
+---
+
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+
+# 5. Generative Agents for Online Social Sytems
+
+---
+
+## Social Simulation with Generative Agents
+
+**Can generative agents simplify assumptions in ABMs of online interaction?**
+
+.pull-left[![:scale 100%](figures/Simulacra.png)
+&lt;div class="ref"&gt;&lt;span&gt;&lt;a href="https://arxiv.org/pdf/2304.03442"&gt; Generative Agents: Interactive Simulacra of Human Behavior. S. Park et al (2023)&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;]
+
+.pull-right[.center[![:scale 100%](figures/Bail.png)]
+&lt;div class="ref"&gt;&lt;span&gt;&lt;a href="https://arxiv.org/abs/2312.06619"&gt; Simulating Social Media Using Large Language Models to Evaluate Alternative News Feed Algorithms. P. Törnberg et al (2023) &lt;/a&gt;&lt;/span&gt;&lt;/div&gt;]
+
+---
+# The WHAT-IF HORIZON project
+
+.center[![:scale 50%](figures/WHAT-IF.png)]
+
+WHat-if: Advanced Simulations for Testing the Effect of the Information Environment on the Functioning of Democracy 
+
+---
+
+
+## Online social networks can be scale free
+
+.pull-left[![:scale 100%](figures/Twitter.png)]
+.pull-right[
+
+- Probability distribution of in-degrees (e.g. number of followers)
+- Scale-free networks with power-law degree distributions:
+$$ p(k) \sim k ^ {-\gamma} $$
+- **Variance of degree distribution grows with network size**
+- **No epidemic threshold: persistent infectious outbreaks**
+
+]
+
+[A Model for Scale-Free Networks: Application to Twitter. S. Aparicio, J. Villazón-Terrazas, G. Álvarez. Entropy (2015)](https://www.mdpi.com/1099-4300/17/8/5848)
+
+---
+
+
+## Generative agents in an online social network
+.center[![:scale 75%](figures/LLMGrowth.png)]
+
+---
+## Simulated networks: the problem of token priors
+
+.center[![:scale 100%](figures/LLMnetB.png)]
+
+- Extreme degree heterogeneity in original setup
+- Broad degree distribution when hiding degrees!
+- Prior on agent names: Zipf's law applies to random node names
+- Friending user x is not the same as saying "I friend user x"
+
+
+---
+
+## Simulated networks with renaming interface
+
+.center[![:scale 100%](figures/LLMnetC.png)]
+
+- Random renaming between rounds: keeping node ids but changing names
+- Token prior effect reduced: no degree info leads to narrow degree distribution
+- We can model online network growth but we need to consider these are language models -- future models should include behavioral tokens
+
+
+---
+
+# Microdynamics of link creation
+.center[![:scale 100%](figures/LLMnet3.png)]
+
+- Generative agents with Large Language Models create scale-free synthetic online social networks  
+&lt;div class="ref"&gt;&lt;span&gt;&lt;a href="https://arxiv.org/abs/2312.06619"&gt; Emergence of Scale-Free Networks in Social Interactions among Large Language Models. G. De Marzo, L. Pietronero, D. Garcia. https://arxiv.org/abs/2312.06619&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
+
+---
+
+
+layout: true
+&lt;div class="my-footer"&gt;&lt;span&gt;&lt;a href="https://arxiv.org/abs/2409.02822"&gt; AI agents can coordinate beyond human scale. G de Marzo, C. Castellano, D. Garcia. Arxiv preprint (2024)&lt;/a&gt;&lt;/span&gt;&lt;/div&gt; 
+
+---
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+
+# 6. The Scale of Coordination among AI Agents
+
+
+---
+# LLMs Within Society
+
+.center[![:scale 88%](figures/AIeverywhere.png)]
+- AI "chiefs of staff" promise to interact with each other in our behalf
+- Coordination and competition (reservations, negotiations, applications)
+- **Could norms emerge, for example rules to be more efficient?** 
+- **Could they have systemic risks, like flash crashes?**
+
+---
+
+# The Social LLM Hypothesis
+.pull-left[![:scale 100%](figures/DunbarQuestion.svg)]
+.pull-right[
+
+- Group formation and sustainability: size depends on cognitive ability
+
+
+- Memory of identity to predict behavior and cooperation
+
+
+- Language as a tool for humans to make larger groups:
+  - Dunbar's number (150-250)
+
+- **Do AI agents form stable groups and are they limited by their linguistic abilities?**
+]
+
+---
+
+# Coordination and Critical Group Size
+
+.center[![:scale 80%](figures/Fish.png)]
+
+Coordination: When the option does not matter, what matters is staying together
+
+---
+
+# Coordination Dynamics in LLM Agents
+.pull-left[.center[![:scale 75%](figures/OP.png)]]
+.pull-right[
+- Simulation of a tight group of N interacting agents
+- Agents start with a random opinion of two options
+- Each iteration, they see the opinions of all others (prompt)
+- They respond to the question of their opinion
+- Opinion labels need to be random and shuffled to avoid token biases
+- Consensus is achieved if all have the same opinion
+- No incentive or instruction to follow the majority
+]
+
+---
+
+# LLM-Dependent Consensus Formation
+.center[![:scale 75%](figures/Consensus.png)]
+Some LLMs can reach consensus for completely arbitrary decisions (50 agents)
+
+---
+
+# Understanding LLM Opinion Dynamics
+
+.center[![:scale 94%](figures/Sigma.png)]
+Agent opinion changes follow an S-function parametrized by a majority force `\(\beta\)`
+---
+
+# Majority Force Factors
+.center[![:scale 95%](figures/plot2.png)]
+- Majority force is higher for models with higher language understanding capabilities (MMLU benchmark)
+- Majority force decreases for larger group sizes
+
+---
+## Critical Group Size and Consensus Time `\(T_c\)`
+.pull-right[![:scale 100%](figures/CW.png)]
+
+- Analysis of critical group size `\(N_c\)`
+
+
+- `\(N&gt;N_c\)`: time to consensus `\(T_c\)` grows exponentially with `\(N\)`
+
+
+- Above critical size, consensus is unfeasible and happens only by chance
+
+
+- `\(T_c\)` can be calculated from `\(\beta\)` as in an Ising Model (i.e. time to magnetization as a function of inverse temperature)
+
+- `\(N_c\)` can be derived from  `\(\beta\)` as the point of phase transition of `\(T_c\)` ( `\(\beta_c=1\)` )
+
+
+---
+
+# Group Size and Language Understanding
+.pull-right[![:scale 90%](figures/Scaling.png)]
+
+- Analysis of majority force and exhaustive simulations to measure **critical consensus size**
+
+- Exponential function of MMLU benchmark
+
+- Humans close to the line
+
+- GPT4 and Claude 3.5 Sonnet reach consensus for `\(N=1000\)`
+  - LLM emergent consensus scale beyond humans
+
+
+---
+
+# Summary of last part
+
+- An idea: Improving Agent-Based Modelling with generative agents (LLMs)
+- Generative agents can create realistic social network degree distributions
+- LLM consensus scale predicted by language understanding capabilities
+- LLMs can reach emergent consensus at scales beyond humans
+- **Opportunity: decision-making or coordination?**
+- **Risk: undesired synchronization like a flash crash?**
+- **Future: Social simulation with LLMs **
+
+&lt;a href="https://arxiv.org/abs/2312.06619"&gt; Emergence of Scale-Free Networks in Social Interactions among Large Language Models. G. De Marzo, L. Pietronero, D. Garcia. Arxiv (2023) &lt;/a&gt;
+
+&lt;a href="https://arxiv.org/abs/2409.02822"&gt; Large Language Model agents can coordinate beyond human scale. G de Marzo, C. Castellano, D. Garcia. Arxiv (2024) &lt;/a&gt;
+
+.center[**More at: [www.dgarcia.eu](https://dgarcia.eu)** and **[Bluesky: @dgarcia.eu](https://bsky.app/profile/dgarcia.bsky.social)**]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="libs/perc.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

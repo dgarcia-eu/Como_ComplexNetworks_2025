@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="166.54472mm"
+   height="18.520422mm"
+   viewBox="0 0 166.54473 18.520422"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="takeHome.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.2948373"
+     inkscape:cx="371.70391"
+     inkscape:cy="137.04675"
+     inkscape:window-width="2560"
+     inkscape:window-height="1328"
+     inkscape:window-x="2560"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="42.550293"
+       y="282.78845"
+       width="622.67743"
+       height="76.561676"
+       id="rect9138" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-13.884178,-38.938625)">
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text9136"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect9138);fill:#000000;fill-opacity:1;stroke:none" />
+    <rect
+       style="fill:#ffd42a;fill-opacity:1;stroke:#000000;stroke-width:0.266786;stroke-opacity:0.963134"
+       id="rect11363"
+       width="166.27794"
+       height="18.253635"
+       x="14.017571"
+       y="39.072018" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="15.73123"
+       y="44.186138"
+       id="text1222"><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;stroke-width:0.264583"
+         x="15.73123"
+         y="44.186138"
+         id="tspan6268">Despite important concerns about Computational Social Science methods in terms of </tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;stroke-width:0.264583"
+         x="15.73123"
+         y="49.477798"
+         id="tspan6612">representativity and online behavior, social media macroscopes of emotion can </tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;stroke-width:0.264583"
+         x="15.73123"
+         y="54.769463"
+         id="tspan6616">substantially agree with established social science methods</tspan></text>
+  </g>
+</svg>
