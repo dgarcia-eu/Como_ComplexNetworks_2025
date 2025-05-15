@@ -1,6 +1,6 @@
 ---
 title: "Collective Behavior: From Digital Traces to Generative Agents"
-author: "David Garcia <br> *Social Data Science Lab, University of Konstanz <br><br> also at:     Complexity Science Hub Vienna*"
+author: "David Garcia <br> *Social Data Science Lab, University of Konstanz <br> Complexity Science Hub Vienna*"
 date: "slides at dgarcia.eu/Como2025"
 output:
   xaringan::moon_reader:
